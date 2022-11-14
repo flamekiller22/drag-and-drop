@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 95%;
+  padding: 1rem 0;
+  margin: auto;
+}
+
+.buttonContainer {
+  width: 100%;
+  height: 69px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: pre-wrap;
+}
+
+.imagesArea {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.imagesArea > * {
+  user-select: none;
+}
+
+.imagesArea .imgWrapper {
+  position: relative;
+  width: calc(20% - 4rem);
+  height: 300px;
+  background-color: rgba(10, 10, 10, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px 2px white;
+}
+
+.imagesArea img {
+  width: auto;
+  max-width: 100%;
+  max-height: 300px;
+}
+
+.imagesArea .middle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagesArea .middle svg {
+  width: 40px;
+  height: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: black;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.imagesArea .imageName {
+  padding: 0.3rem 0.2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+}
+
+.imagesArea .imageOrder {
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+}
